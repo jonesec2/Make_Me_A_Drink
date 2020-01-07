@@ -1,0 +1,70 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+
+h1 { 
+    color: rgb(180,9,9);
+    text-shadow: 2px 2px 2px rgb(51,34,34);
+}
+
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(77,26,26) !important;
+}
+
+.texture {
+    background: url(images/cream_dust.png) repeat 0 0;
+    background:rgba(238, 235, 235, 0.7);
+    height: 560px;
+    position:relative;   
+}
+
+#background {
+    position: relative;
+    z-index: 1;
+    top: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(102,17,17);
+    transition: 0.5s ease-out;
+}
+
+#background:hover {
+    top: 10px;
+    width: 220px;
+    height: 220px;
+    background: rgb(255, 0, 0);
+    opacity: 1.0;
+    transition: 0.5s ease-out;
+    box-shadow: 0 0 1em 1em rgba(255, 251, 220, 0.842);
+}
+
+#background:active  {
+    width: 205px;
+    height: 205px;
+    transition: 0.1s ease-out;  
+}
+
+#drinkImage {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s ease-out;
+}
+
+
+#drinkImage:hover {
+    width: 220px;
+    height: 220px;
+    transition: 0.5s ease-out;
+}  
+
+#drinkImage:active  {
+    width: 200px;
+    height: 200px;
+    transition: 0.1s ease-out;  
+}
