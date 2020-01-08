@@ -15,16 +15,18 @@ ol, ul {
     color: rgb(102,17,17);
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 150;
+    font-weight: 400;
 }
 
 .ingS {
     line-height: 2;
     text-align: left !important;
+    left:5px !important;
 }
 .ingST {
     line-height: 1.5;
     text-align: left !important;
+    left: 5px !important;
 }
 
 .insS {
@@ -32,6 +34,7 @@ ol, ul {
     text-align: right !important;
     list-style: none !important;
     list-style-type: none !important;
+    right: 5px !important;
 }
 
 p, div {
