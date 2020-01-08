@@ -8,6 +8,32 @@ h1 {
     text-shadow: 2px 2px 2px rgb(51,34,34);
 }
 
+h2, h3 {
+    color: rgb(51,34,34) !important;
+}
+ol, ul {
+    color: rgb(102,17,17);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150;
+}
+
+.ingS {
+    line-height: 2;
+    text-align: left !important;
+}
+.ingST {
+    line-height: 1.5;
+    text-align: left !important;
+}
+
+.insS {
+    line-height: 1.5;
+    text-align: right !important;
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
 p, div {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
@@ -18,7 +44,7 @@ p, div {
 
 .texture {
     background: url(images/cream_dust.png) repeat 0 0;
-    background:rgba(238, 235, 235, 0.7);
+    background:rgba(238, 235, 235, 0.4);
     height: 560px;
     position:relative;   
 }
@@ -26,18 +52,30 @@ p, div {
 #background {
     position: relative;
     z-index: 1;
-    top: 15px;
-    width: 200px;
-    height: 200px;
+    /* top: 15px; */
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    flex: none !important;
+    width: 200px !important;
+    height: 200px !important;
     border-radius: 50%;
     background: rgb(102,17,17);
     transition: 0.5s ease-out;
 }
 
+#ingredients, #instructions {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
 #background:hover {
-    top: 10px;
-    width: 220px;
-    height: 220px;
+    /* top: 10px; */
+    width: 220px !important;
+    height: 220px !important;
     background: rgb(255, 0, 0);
     opacity: 1.0;
     transition: 0.5s ease-out;
@@ -45,26 +83,31 @@ p, div {
 }
 
 #background:active  {
-    width: 205px;
-    height: 205px;
+    width: 205px !important;
+    height: 205px !important;
     transition: 0.1s ease-out;  
 }
 
 #drinkImage {
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     transition: 0.5s ease-out;
+    margin-right: 0px !important;
 }
 
 
 #drinkImage:hover {
-    width: 220px;
-    height: 220px;
+    width: 220px !important;
+    height: 220px !important;
     transition: 0.5s ease-out;
 }  
 
 #drinkImage:active  {
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
     transition: 0.1s ease-out;  
+}
+
+#drinkName {
+    display: block !important;
 }

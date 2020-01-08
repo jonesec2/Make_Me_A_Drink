@@ -3,16 +3,18 @@ var images = ["cocktailOne.png", "cocktailTwo.png", "cocktailsThree.png", "gin-t
 $(document).ready(function () {
     var drink = /*html*/ `<img class="mx-auto my-auto d-block" data-number="0" id="drinkImage" src="assets/images/${images[0]}" alt="drink">`
     console.log(drink)
-    $("#drink").append(drink)
+    $(".drink").append(drink)
 })
 
 var i = 1
 
 $.backstretch("assets/images/barPhoto.PNG");
 
-$("#drink").on("click", function () {
-    $("#drink").empty();
+$(".drink").on("click", function () {
+    $(".drink").empty();
     $("#drinkDetails").empty();
+    $("#instructions").empty();
+    $('#ingredients').empty();
     console.log(i)
     if (i <= 5) {
         var drink = /*html*/ `<img class="mx-auto my-auto d-block" data-number="${i}" id="drinkImage" src="assets/images/${images[i++]}" alt="drink">`
@@ -29,7 +31,7 @@ $("#drink").on("click", function () {
     $.ajax({ url: query, method: "GET" }).then(function (response) {
         console.log(response)
         var drinkName = response.drinks[0].strDrink
-        // var drinkIngredients = [ {ingrediateOne: null}, {ingratiateTwo: null}, {ingratiateThree: null}, {ingratiateFour: null}, {ingratiateFive: null}, {ingratiateSix: null} ]
+        // var drinkIngredients = [ {ingratiateOne: null}, {ingratiateTwo: null}, {ingratiateThree: null}, {ingratiateFour: null}, {ingratiateFive: null}, {ingratiateSix: null} ]
         for (d = 1; d <= 15; d ++) {
             // var allIngredients = strIngredient+i
             // console.log(allIngredients)
@@ -40,28 +42,30 @@ $("#drink").on("click", function () {
             var instructions = response.drinks[0].strInstructions
             // console.log(drinkIngredients)
         }
-        var appendDrink = /*html*/ `
-        <h2>${drinkName}<h2>
-        <div class="row text-center">
-            <div class="col-6">Ingredients
-                <ol>
-                    <li>${ingOne}  -  ${measureOne}</li>
-                    <li>${ingTwo}  -  ${measureTwo}</li>
+        var appendName = /*html*/ `
+            <h2 id='drinkName' class="row text-center">${drinkName}<h2>
+        `
+        var appendIngredients = /*html*/`
+            <h3 class="ingST">Ingredients
+                <ol class="ingS">
+                    <li class="ingS">${ingOne}  -  ${measureOne}</li>
+                    <li class="ingS">${ingTwo}  -  ${measureTwo}</li> 
                 </ol>
-            </div>
-            <div class="col-6">Instructions
-                <ol>
-                    <li>${instructions}</li>
-                        
-                </ol>
-            </div>
-        </div>
+            </h3>
+        `
+        var appendInstructions = /*html*/`
+            <h3 class="insS"> Instructions
+                <ul class="insS">
+                    <li class="insS">${instructions}</li>
+                </ul>
+            <h3>
         `
         console.log(drinkName)
-        $('#drinkDetails').append(appendDrink)
+        $('#drinkDetails').append(appendName)
+        $('#instructions').append(appendInstructions)
+        $('#ingredients').append(appendIngredients)
     })
-    $("#drink").append(drink)
-    $("#drinkDetails").css("display", "flex")
+    $(".drink").append(drink)
 
 })
 
