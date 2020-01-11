@@ -22,9 +22,9 @@ a, button, input {
 }
 ol, ul {
     color: rgb(102,17,17);
-    font-size: large;
+    font-size: 20px;
     font-family: 'Vollkorn', serif;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
 }
 
 .ingS {
@@ -56,7 +56,7 @@ p, div {
 
 .texture {
     background: url(images/cream_dust.png) repeat 0 0;
-    background:rgba(238, 235, 235, 0.4);
+    background:rgba(238, 235, 235, 0.7);
     height: 560px;
     position:relative;   
 }
