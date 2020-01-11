@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { 
-    color: rgba(77,26,26);
+    color: rgb(104, 35, 35);
     text-shadow: 2px 2px 2px rgb(102,17,17);
     font-size: 4.5rem !important;
 }
@@ -58,7 +58,8 @@ p, div {
     background: url(images/cream_dust.png) repeat 0 0;
     background:rgba(238, 235, 235, 0.7);
     height: 560px;
-    position:relative;   
+    position:relative;
+    border-radius: 10%;
 }
 
 #background {
