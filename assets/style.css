@@ -27,6 +27,10 @@ ol, ul {
     font-weight: 600 !important;
 }
 
+img {
+   top: 0.0px !important;
+}
+
 .ingS {
     line-height: 2;
     text-align: left !important;

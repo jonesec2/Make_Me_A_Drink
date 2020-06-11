@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 var i = 1
 
-$.backstretch("assets/images/barPhoto.PNG");
+$.backstretch("assets/images/ingoodspirits-8.jpg");
 
 $(".drink").on("click", function () {
     $(".drink").empty();
