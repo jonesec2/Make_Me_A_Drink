@@ -8,7 +8,11 @@ $(document).ready(function () {
 
 var i = 1
 
+// default mode
 $.backstretch("assets/images/ingoodspirits-8.jpg");
+
+//for dark mode
+// $.backstretch(assets/images/ingoodspirits-10.jpg)
 
 $(".drink").on("click", function () {
     $(".drink").empty();
